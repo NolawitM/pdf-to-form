@@ -1,12 +1,10 @@
 //AKfycbx11SEADXZK-SpNeSgqfsEir277sTa4oUfCS7b-11KnGWe88wIcsXI2r98JSAZ5GkbkeQ
 
-// app.js
-
 // Tell pdf.js where its worker script lives:
 pdfjsLib.GlobalWorkerOptions.workerSrc =
   "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js";
 
-// parseQuestions (unchanged)
+// parseQuestions
 function parseQuestions(text) {
   const questions = [];
   const blocks = text.split(/\s*(?:\d{1,3})\.\s+/).filter(Boolean);
